@@ -1,0 +1,462 @@
+/* export typo */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Varela+Round&display=swap");
+body {
+  background: linear-gradient(
+      45deg,
+      rgb(19, 73, 95),
+      rgb(118, 75, 226),
+      rgb(131, 115, 198),
+      rgb(119, 211, 185),
+      rgb(19, 73, 95),
+      rgb(118, 75, 226)
+    )
+    fixed;
+  background-size: 400%;
+  animation: background-animated 10s ease infinite;
+  height: 100%;
+  min-height: 100%;
+  bottom: 0;
+}
+
+@keyframes background-animated {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  /* color: white; */
+  font-family: "Quicksand", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.container-social {
+  width: 60px;
+
+  background-color: #151515;
+  border-right: 1px solid rgb(52, 52, 52);
+  border-radius: 10px;
+}
+
+.social {
+  top: 90px;
+  bottom: 22px;
+  left: 0px;
+  border-right: 1px solid rgb(52, 52, 52);
+  height: 100%;
+  color: rgb(153, 153, 153);
+  font-size: 1.4rem;
+  background-color: rgb(21, 21, 21);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container-icon {
+  width: 30px;
+  height: 23px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.container-icon:hover {
+  background-color: rgb(40 40 40 / 58%);
+}
+
+.container-listprojet {
+  min-width: 190px;
+  width: 190px;
+  visibility: visible;
+  max-width: 400px;
+  flex: 0 0 auto;
+  position: relative;
+  outline: none;
+  background-color: #151515;
+  border-right: 1px solid rgb(52, 52, 52);
+  /* padding: 15px; */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  height: 0px;
+  background-color: #151515;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.content {
+  display: flex;
+}
+
+.title-listprojet {
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+
+  height: auto;
+  border-bottom: 1px solid #343434;
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.title-listprojet > p {
+  margin: 0px;
+}
+
+.container-titleprojet {
+  height: auto;
+  /* padding: 10px; */
+  /* margin-left: -10px; */
+  font-size: 13px;
+  color: gray;
+  transition: 0.5s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.container-titleprojet:hover {
+  background-color: rgb(40 40 40 / 58%);
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.container-header-icon {
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* text-transform: uppercase; */
+  /* font-weight: bolder; */
+  height: auto;
+  font-size: 13px;
+  background: #1d1c1c;
+  width: auto;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 0px #161616;
+  color: white;
+  border: 1px solid #302f2f;
+  text-indent: 5px;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+  height: 6%;
+  border-bottom: 1px solid #343434;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.title > p {
+  margin: 0px;
+}
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.content {
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* .image-gallery-image {
+  object-fit: scale-down !important;
+  width: 90% !important;
+} */
+
+.body-main {
+  height: 94%;
+  width: 100%;
+  background-size: 400%;
+}
+
+button {
+  background-color: #15151500;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.container-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loader-titleprojet {
+  width: 90%;
+  height: 20px;
+  background: linear-gradient(to right, #2c2c2c 8%, #1d1d1d 18%, #424242 33%);
+  /* background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%); */
+
+  background-size: 800px 104px;
+  margin-bottom: 10px;
+  animation: loader-title 4s ease infinite;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+@keyframes loader-title {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
+
+.container-login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-input > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #343434;
+  background-color: #ebecec;
+  color: #2d2c2c;
+  font-size: 14px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+}
+
+.container-input > input:focus {
+  outline: none;
+}
+
+.container-input > input::placeholder {
+  color: #343434;
+}
+
+.container-button-login > button {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  margin: 24px 0 0 0;
+  border-radius: 7px;
+  color: #bcbfcd;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  background: #eceffc;
+  transition: color 0.3s, background 0.3s;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.container-form {
+  width: 50%;
+}
+
+.login-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f8ff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container-title > h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2d2c2c;
+  margin-bottom: 10px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.error {
+  color: white;
+  font-size: 12px;
+  margin-top: 5px;
+  background-color: #940909;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.container-settings {
+  top: 90px;
+  bottom: 22px;
+  left: 0px;
+  border-right: 1px solid rgb(243 236 236);
+  height: 100%;
+  color: rgb(153, 153, 153);
+  font-size: 1.4rem;
+  background-color: rgb(246 248 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-icon-settings {
+  width: 30px;
+  height: 23px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container-icon-settings:hover {
+  background-color: rgb(226 227 232);
+}
+
+.success {
+  color: white;
+  font-size: 12px;
+  margin-top: 5px;
+  background-color: #0a940a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,53 @@
+.container-config {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.container-config > h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container-config > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #343434;
+  background-color: #ebecec;
+  color: #2d2c2c;
+  font-size: 14px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+}
+
+.container-config > label {
+  padding: 10px;
+  font-size: 13px;
+  color: #2b2b2b;
+}
+
+.container-config > button {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  margin: 24px 0 0 0;
+  border-radius: 7px;
+  color: #bcbfcd;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: rgb(54, 42, 137);
+  transition: color 0.3s, background 0.3s;
+  cursor: pointer;
+  transition: 1s;
+}
